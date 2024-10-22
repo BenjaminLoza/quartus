@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/partea.vhd
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/simulation/Waveform.vwf
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/db/partea.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = partea
+instance = comp, \LED~output\, LED~output, partea, 1
+instance = comp, \SW2~input\, SW2~input, partea, 1
+instance = comp, \SW1~input\, SW1~input, partea, 1
+instance = comp, \SW3~input\, SW3~input, partea, 1
+instance = comp, \LED~0\, LED~0, partea, 1
