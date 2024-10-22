@@ -1,0 +1,6 @@
+|ParteB
+D => ~NO_FANOUT~
+CL => ~NO_FANOUT~
+Q << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

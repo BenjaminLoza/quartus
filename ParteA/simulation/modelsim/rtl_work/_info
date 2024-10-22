@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteA\simulation\modelsim
+Epartea
+Z1 w1729626802
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteA\simulation\modelsim
+Z5 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/partea.vhd
+Z6 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/partea.vhd
+l0
+L4
+Vd`80^hZRXHB9J?GHo9:Dg3
+!s100 TE1ea8^7ATIU>PRH@Vb`D2
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1729634964.468000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/partea.vhd|
+Z10 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/partea.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Aarq_comb
+R2
+R3
+DEx4 work 6 partea 0 22 d`80^hZRXHB9J?GHo9:Dg3
+l17
+L12
+V?gV0_c1:YllZAIeoej`4k0
+!s100 Na:E7i^<QbER]dE7dURnk2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

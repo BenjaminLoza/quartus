@@ -1,7 +1,8 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/partea.vhd
-source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/simulation/Waveform.vwf
-source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/db/partea.cbx.xml
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/partea.vhd
+source_file = 1, simulation/Waveform.vwf
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/vwfpartea.vwf
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/db/partea.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd

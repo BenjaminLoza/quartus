@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteB\simulation\qsim
+vParteB
+Z1 Io@c`@S0J^L5I4eOKVB7D70
+Z2 VcZ2EJZ9<Qj^M?@QlQ9CQ42
+Z3 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteB\simulation\qsim
+Z4 w1729637497
+Z5 8ParteB.vo
+Z6 FParteB.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ParteB.vo|
+Z9 o-work work -O0
+Z10 n@parte@b
+!i10b 1
+Z11 !s100 g>;BBggM`A6OWJi7_1X541
+!s85 0
+Z12 !s108 1729637498.475000
+Z13 !s107 ParteB.vo|
+!s101 -O0
+vParteB_vlg_check_tst
+!i10b 1
+Z14 !s100 T8C>`HXCohU7WSaa?e[mS3
+Z15 IP4^FNjdnNHfVM8fTL:_e<0
+Z16 V5AN8HkNgz?R[ac9P?e6Ph3
+R3
+Z17 w1729637496
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z20 !s108 1729637498.521000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+Z23 n@parte@b_vlg_check_tst
+vParteB_vlg_sample_tst
+!i10b 1
+Z24 !s100 g4F2H`eMP0ag>fzZF:O`41
+Z25 IT2ZU[?3B7:RFQA2PHLE[I0
+Z26 VAnL]zK[YZLn0B2NWfnOB<3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@parte@b_vlg_sample_tst
+vParteB_vlg_vec_tst
+!i10b 1
+Z28 !s100 ^DmC<kXcBF8cU:OY@RCc_2
+Z29 I?0X3X>8@2Oh;XUG9ELao[1
+Z30 V8EUEonToMlfiC<X41lMDW1
+R3
+R17
+R18
+R19
+Z31 L0 154
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@parte@b_vlg_vec_tst

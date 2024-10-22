@@ -1,5 +1,5 @@
 Assembler report for partea
-Tue Oct 22 18:46:48 2024
+Tue Oct 22 19:01:16 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/output_files/partea.sof
+  5. Assembler Device Options: C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/output_files/partea.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 22 18:46:48 2024 ;
+; Assembler Status      ; Successful - Tue Oct 22 19:01:16 2024 ;
 ; Revision Name         ; partea                                ;
 ; Top-level Entity Name ; partea                                ;
 ; Family                ; Cyclone III                           ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Generated Files                                                         ;
-+-----------------------------------------------------------------------------------+
-; File Name                                                                         ;
-+-----------------------------------------------------------------------------------+
-; C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/output_files/partea.sof ;
-+-----------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Assembler Generated Files                                                        ;
++----------------------------------------------------------------------------------+
+; File Name                                                                        ;
++----------------------------------------------------------------------------------+
+; C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/output_files/partea.sof ;
++----------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/santi/OneDrive/Documentos/GitHub/quartus/Parte A/output_files/partea.sof ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                    ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Device         ; EP3C120F780C7                                                                              ;
-; JTAG usercode  ; 0x00562BB0                                                                                 ;
-; Checksum       ; 0x00562BB0                                                                                 ;
-+----------------+--------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteA/output_files/partea.sof ;
++----------------+-------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                   ;
++----------------+-------------------------------------------------------------------------------------------+
+; Device         ; EP3C120F780C7                                                                             ;
+; JTAG usercode  ; 0x00562BB0                                                                                ;
+; Checksum       ; 0x00562BB0                                                                                ;
++----------------+-------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 22 18:46:43 2024
+    Info: Processing started: Tue Oct 22 19:01:12 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off partea -c partea
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Tue Oct 22 18:46:48 2024
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Tue Oct 22 19:01:16 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

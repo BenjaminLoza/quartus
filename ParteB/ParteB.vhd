@@ -7,4 +7,7 @@ entity ParteB is
 		Q: out std_logic);
 		end;
 		
-arquitecture 
+architecture behaviour of ParteB is
+begin
+
+end; 

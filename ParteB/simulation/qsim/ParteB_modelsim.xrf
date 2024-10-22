@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFF.vhd
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/Waveform.vwf
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/db/ParteB.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = ParteB
+instance = comp, \Q~output , Q~output, ParteB, 1
+instance = comp, \D~input , D~input, ParteB, 1
+instance = comp, \CL~input , CL~input, ParteB, 1
