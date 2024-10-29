@@ -44,10 +44,7 @@ architecture behaviour of tsParteC is
 
     process
     begin
-        A1 <= '0'; B1 <= '0'; A2 <= '0'; B2 <= '0'; A3 <= '0'; B3 <= '0'; A4 <= '0'; B4 <= '0'; Bi <= '0'; wait for 20 ns;
-        A1 <= '0'; B1 <= '0'; A2 <= '0'; B2 <= '1'; A3 <= '0'; B3 <= '1'; A4 <= '0'; B4 <= '1'; Bi <= '0'; wait for 20 ns;
-        A1 <= '1'; B1 <= '1'; A2 <= '1'; B2 <= '1'; A3 <= '1'; B3 <= '1'; A4 <= '1'; B4 <= '1'; Bi <= '1'; wait for 20 ns;
-        A1 <= '0'; B1 <= '1'; A2 <= '1'; B2 <= '0'; A3 <= '0'; B3 <= '1'; A4 <= '1'; B4 <= '0'; Bi <= '1'; wait for 20 ns;
+        A1 <= '0'; B1 <= '0'; A2 <= '0'; B2 <= '0'; A3 <= '1'; B3 <= '0'; A4 <= '0'; B4 <= '0'; Bi <= '1'; wait for 100 ns;
         wait;
     end process;
 end architecture;

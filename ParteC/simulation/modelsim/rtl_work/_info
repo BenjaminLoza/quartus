@@ -15,7 +15,7 @@ L4
 VQj@8DWBOBa<HNS^B=cg`G0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1730168230.728000
+Z8 !s108 1730222519.638000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z10 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z11 o-93 -work work -O0
@@ -50,7 +50,7 @@ L4
 VQfPRJY[:Ng`^=WU<Zb3RD2
 R7
 31
-Z16 !s108 1730168230.626000
+Z16 !s108 1730222519.568000
 Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
 Z18 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
 R11
@@ -85,7 +85,7 @@ L4
 VETi2n:nhGe7fJhRO?2^<T1
 R7
 31
-Z22 !s108 1730168230.794000
+Z22 !s108 1730222519.732000
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd|
 Z24 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd|
 R11
@@ -109,7 +109,7 @@ R12
 !s100 71ao<`HjS^<=fSjOiLT@H0
 !i10b 1
 Etspartec
-Z25 w1730168140
+Z25 w1730222429
 R2
 R3
 R4
@@ -122,7 +122,7 @@ VWDzZFKz>[3PoT<]iE[G`>1
 R7
 31
 !i10b 1
-Z28 !s108 1730168230.854000
+Z28 !s108 1730222519.807000
 Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 Z30 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 R11
@@ -133,8 +133,8 @@ R3
 DEx4 work 8 tspartec 0 22 WDzZFKz>[3PoT<]iE[G`>1
 l18
 L7
-Vk`V2j5>1@e16=@bX<ok=53
-!s100 nO`X=mld@VGG7fM8>1>iF1
+V^3C9HXg19UA5e5[_U68LZ3
+!s100 8;MgnGZJI4:f2Ieeel4;l1
 R7
 31
 !i10b 1
