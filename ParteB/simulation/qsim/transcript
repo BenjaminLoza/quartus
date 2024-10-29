@@ -20,12 +20,6 @@
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading work.ParteB_vlg_sample_tst
 # Loading work.ParteB_vlg_check_tst
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading instances from ParteB_v.sdo
-# Loading timing data from ParteB_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /ParteB_vlg_vec_tst File: Waveform.vwf.vt
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(150)
+# ** Note: $finish    : WaveformPARTEB.vwf.vt(181)
 #    Time: 1 us  Iteration: 0  Instance: /ParteB_vlg_vec_tst/tb_out

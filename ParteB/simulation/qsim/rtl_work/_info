@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteB\simulation\qsim
+Edffs
+Z1 w1730158648
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteB\simulation\qsim
+Z5 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd
+Z6 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd
+l0
+L4
+VQj@8DWBOBa<HNS^B=cg`G0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1730166426.724000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
+Z10 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 [_lg:Jn2]lJz>P4AXHoO32
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 4 dffs 0 22 Qj@8DWBOBa<HNS^B=cg`G0
+l12
+L11
+V4Dd_66>m8We54?mFlM]SU3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 T>4f=Rm6n4F1BbI]<A=Y11
+!i10b 1
+Eparteb
+Z13 w1730166387
+R2
+R3
+R4
+Z14 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd
+Z15 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd
+l0
+L4
+VQfPRJY[:Ng`^=WU<Zb3RD2
+R7
+31
+Z16 !s108 1730166426.661000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
+Z18 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
+R11
+R12
+!s100 47W<Rje4<BY`K<M0]ARVU1
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 6 parteb 0 22 QfPRJY[:Ng`^=WU<Zb3RD2
+l19
+L10
+V^35P_efFzbYYjNf622LG53
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 T1lJ8aT?<7n3MQ^EU?VA;3
+!i10b 1
+Etsparteb
+Z19 w1730165756
+R2
+R3
+R4
+Z20 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/tsparteb.vhd
+Z21 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/tsparteb.vhd
+l0
+L4
+VlBK8D1Q0g:eYId@aELGI13
+!s100 5m8fOD>]YOCm3OTWPgbmg0
+R7
+31
+!i10b 1
+Z22 !s108 1730166426.782000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/tsparteb.vhd|
+Z24 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/tsparteb.vhd|
+R11
+R12
+Abehaviour
+R2
+R3
+DEx4 work 8 tsparteb 0 22 lBK8D1Q0g:eYId@aELGI13
+l17
+L6
+VVF[hO4B_NM<B=NigRK?CQ3
+!s100 3TUicCY;F^121^i0U`9]71
+R7
+31
+!i10b 1
+R22
+R23
+R24
+R11
+R12

@@ -1,16 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity dff is
+entity DFFS is
 port (
 	D,CL: in std_logic;
 	Q:out std_logic
 );
 end;
 
-architecture behaviour of dff is
+architecture behaviour of DFFS is
 begin
-	process (CL,D) begin
+	process (CL) begin
 		if (rising_edge(CL)) then
 			Q<= D;
 		end if;

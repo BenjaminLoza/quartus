@@ -1,6 +1,43 @@
 |ParteB
-D => ~NO_FANOUT~
-CL => ~NO_FANOUT~
-Q << comb.DB_MAX_OUTPUT_PORT_TYPE
+A => DFFS:D1.D
+B => DFFS:D2.D
+CL => DFFS:D1.CL
+CL => DFFS:D2.CL
+CL => DFFS:D3.CL
+CL => DFFS:D4.CL
+CL => DFFS:D5.CL
+Bi => DFFS:D3.D
+R <= DFFS:D4.Q
+Bo <= DFFS:D5.Q
+
+
+|ParteB|DFFS:D1
+D => Q~reg0.DATAIN
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteB|DFFS:D2
+D => Q~reg0.DATAIN
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteB|DFFS:D3
+D => Q~reg0.DATAIN
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteB|DFFS:D4
+D => Q~reg0.DATAIN
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteB|DFFS:D5
+D => Q~reg0.DATAIN
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

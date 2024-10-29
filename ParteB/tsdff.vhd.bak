@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tsdff is tsdff end;
+architecture behavoiur of tsdff is
+	Component DFF
+	PORT(
+	D: IN STD_logic;
+	CL: IN STD_logic;
+	Q: OUT STD_logic
+	);
+	END COMPONENT;
+	
+	--INPUTS
+	signal D: IN STD_logic:='0';
+	signal CL: IN STD_logic:='0';
+	--OUTPUTS
+	signal Q: OUT STD_logic;
+	
+BEGIN
+	uut:DFF PORT MAP(
+		D=>D,
+		CL=>CL,
+		Q=>Q
+	);
+	
+	process
+	begin
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';D<='1';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';D<='0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';D<='0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		CL<= '1';wait for 10ns;CL<= '0';wait for 10ns;
+		wait;
+	end process;
+end;
