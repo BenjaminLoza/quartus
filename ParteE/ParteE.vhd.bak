@@ -1,0 +1,110 @@
+-- Quartus II VHDL Template
+-- Four-State Moore State Machine
+
+-- A Moore machine's outputs are dependent only on the current state.
+-- The output is written only when the state changes.  (State
+-- transitions are synchronous.)
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ParteD is
+
+	port(
+		clk		 : in	std_logic;
+		sda	 : in	std_logic;
+		reset	 : in	std_logic;
+		acko	 : out	std_logic_vector(1 downto 0)
+	);
+
+end entity;
+
+architecture rtl of ParteD is
+
+	-- Build an enumerated type for the state machine
+	type state_type is (st, gdi, rw, ack,gda,id);
+
+	-- Register to hold the current state
+	signal state : state_type;
+	signal 
+begin
+	
+	component dir 
+		port(hdi,scl,sda:in std_logic;fdi,soy:out std_logic);
+	end;
+	component dato
+		port(hda,scl:in std_logic;fda:out std_logic);
+	end;
+	
+	process (clk, reset)
+	begin
+		if reset = '1' then
+			state <= st;
+		elsif (rising_edge(clk)) then
+			case state is
+				when id=>
+					if sda = '1' then
+						state <= id;
+					else
+						state <= st;
+					end if;
+				when st=>
+					if sda = '1' then
+						state <= gdi;
+					else
+						state <= gdi;
+					end if;
+				when gdi=>
+					if fdi = '1' then
+						if soy = '1' then	
+							state <= rw;
+						end if;
+					else
+						state <= fdi;
+					end if;
+				when rw =>
+					if sda = '1' then
+						state <= ack;
+					else
+						state <= ack;
+					end if;
+				when ack=>
+					if sda = '1' then
+						state <= gda;
+					else
+						state <= gda;
+					end if;
+				when gda =>
+					if fda = '1' then
+						state <= id;
+					else
+						state <= gda;
+					end if;
+			end case;
+		end if;
+	end process;
+
+	-- Output depends solely on the current state
+	process (state)
+	begin
+		case state is
+			when id =>
+				begin
+				hda<= '0';hdi<= '0';acko<= '0';
+				end;
+			when st =>
+				hda<= '0';
+			when gdi =>
+				hdi<= '1';
+			when rw =>
+				hdi<= '0';
+			when ack =>
+				acko<= '1';
+			when gda =>
+				begin
+				acko<= '0';hda<= '1';
+				end;
+		end case;
+	end process;
+
+end rtl;

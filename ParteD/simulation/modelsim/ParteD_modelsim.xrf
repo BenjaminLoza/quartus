@@ -1,6 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteD/ParteDstate.vhd
 source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteD/ParteDstate.smf
+source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteD/ParteD.vhd
 source_file = 1, C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteD/db/ParteD.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

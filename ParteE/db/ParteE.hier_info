@@ -1,0 +1,7 @@
+|ParteE
+clk => state~6.DATAIN
+sda => state.DATAB
+sda => state.DATAB
+acko <= acko$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
