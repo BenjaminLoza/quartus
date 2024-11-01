@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteC\simulation\modelsim
 Edffs
-Z1 w1730158648
+Z1 w1730240028
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteC\simulation\modelsim
@@ -15,7 +15,7 @@ L4
 VQj@8DWBOBa<HNS^B=cg`G0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1730222519.638000
+Z8 !s108 1730480905.051000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z10 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z11 o-93 -work work -O0
@@ -38,32 +38,32 @@ R11
 R12
 !s100 T>4f=Rm6n4F1BbI]<A=Y11
 !i10b 1
-Eparteb
-Z13 w1730166387
+Epartecblock
+Z13 w1730480596
 R2
 R3
 R4
-Z14 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd
-Z15 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd
+Z14 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd
+Z15 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd
 l0
-L4
-VQfPRJY[:Ng`^=WU<Zb3RD2
+L24
+VQbLaz1=K_V]oHFl0:Lm<Z0
 R7
 31
-Z16 !s108 1730222519.568000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
-Z18 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd|
+Z16 !s108 1730480904.984000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd|
+Z18 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd|
 R11
 R12
-!s100 47W<Rje4<BY`K<M0]ARVU1
+!s100 e5YnBa;=nB07iXm9hjW2M3
 !i10b 1
-Abehaviour
+Abdf_type
 R2
 R3
-DEx4 work 6 parteb 0 22 QfPRJY[:Ng`^=WU<Zb3RD2
-l19
-L10
-V^35P_efFzbYYjNf622LG53
+DEx4 work 11 partecblock 0 22 QbLaz1=K_V]oHFl0:Lm<Z0
+l81
+L44
+VDlLDT10FbBKoo_:i>=9dn2
 R7
 31
 R16
@@ -71,34 +71,34 @@ R17
 R18
 R11
 R12
-!s100 T1lJ8aT?<7n3MQ^EU?VA;3
+!s100 l[[=35Xkn6=gV7j<ELCQz2
 !i10b 1
-Epartec
-Z19 w1730167207
+Erestador
+Z19 w1730478913
 R2
 R3
 R4
-Z20 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd
-Z21 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd
+Z20 8C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd
+Z21 FC:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd
 l0
 L4
-VETi2n:nhGe7fJhRO?2^<T1
+VJeK_Gg=zHS7PzFRe:zf872
 R7
 31
-Z22 !s108 1730222519.732000
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd|
-Z24 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd|
+Z22 !s108 1730480905.113000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd|
+Z24 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd|
 R11
 R12
-!s100 4S6kzPRH8O^ZZ:J11J<7A2
+!s100 AZiNoj[V`XlH=4Z6a8@k=2
 !i10b 1
 Abehaviour
 R2
 R3
-DEx4 work 6 partec 0 22 ETi2n:nhGe7fJhRO?2^<T1
-l19
+DEx4 work 8 restador 0 22 JeK_Gg=zHS7PzFRe:zf872
+l11
 L10
-VcC>jXgWaEM8F?24]f9]_61
+VhYbm76<;ONEJ^KoW>l]dj1
 R7
 31
 R22
@@ -106,10 +106,10 @@ R23
 R24
 R11
 R12
-!s100 71ao<`HjS^<=fSjOiLT@H0
+!s100 1U;zIbN^`2O;MS5MzLWam0
 !i10b 1
 Etspartec
-Z25 w1730222429
+Z25 w1730480360
 R2
 R3
 R4
@@ -122,7 +122,7 @@ VWDzZFKz>[3PoT<]iE[G`>1
 R7
 31
 !i10b 1
-Z28 !s108 1730222519.807000
+Z28 !s108 1730480905.174000
 Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 Z30 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 R11
@@ -133,8 +133,8 @@ R3
 DEx4 work 8 tspartec 0 22 WDzZFKz>[3PoT<]iE[G`>1
 l18
 L7
-V^3C9HXg19UA5e5[_U68LZ3
-!s100 8;MgnGZJI4:f2Ieeel4;l1
+VB@H<5]7CIDl9aD]J11VIL3
+!s100 ]0ji9TCd7FWYnz3Xg3Qc@1
 R7
 31
 !i10b 1
