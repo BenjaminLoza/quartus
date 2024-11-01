@@ -5,9 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/ParteB.vhd}
+vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd}
 vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd}
-vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteC.vhd}
+vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd}
 
 vcom -93 -work work {C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd}
 

@@ -1,192 +1,157 @@
-|ParteC
-A1 => ParteB:Res1.A
-B1 => ~NO_FANOUT~
-A2 => ParteB:Res2.A
-B2 => ParteB:Res1.B
-B2 => ParteB:Res2.B
-A3 => ParteB:Res3.A
-B3 => ParteB:Res3.B
-A4 => ParteB:Res4.A
-B4 => ParteB:Res4.B
-CL => ParteB:Res1.CL
-CL => ParteB:Res2.CL
-CL => ParteB:Res3.CL
-CL => ParteB:Res4.CL
-Bi => ParteB:Res1.Bi
-R1 << ParteB:Res1.R
-R2 << ParteB:Res2.R
-R3 << ParteB:Res3.R
-R4 << ParteB:Res4.R
-Bo << ParteB:Res4.Bo
+|ParteCblock
+CL => dffs:b2v_inst.CL
+CL => dffs:b2v_inst10.CL
+CL => dffs:b2v_inst11.CL
+CL => dffs:b2v_inst12.CL
+CL => dffs:b2v_inst13.CL
+CL => dffs:b2v_inst14.CL
+CL => dffs:b2v_inst15.CL
+CL => dffs:b2v_inst16.CL
+CL => dffs:b2v_inst5.CL
+CL => dffs:b2v_inst6.CL
+CL => dffs:b2v_inst7.CL
+CL => dffs:b2v_inst8.CL
+CL => dffs:b2v_inst9.CL
+A1 => dffs:b2v_inst.D
+B1 => dffs:b2v_inst5.D
+A2 => dffs:b2v_inst9.D
+A3 => dffs:b2v_inst10.D
+A4 => dffs:b2v_inst11.D
+B2 => dffs:b2v_inst6.D
+B3 => dffs:b2v_inst7.D
+B4 => dffs:b2v_inst8.D
+Bo <= dffs:b2v_inst16.Q
+R1 <= dffs:b2v_inst12.Q
+R2 <= dffs:b2v_inst13.Q
+R3 <= dffs:b2v_inst14.Q
+R4 <= dffs:b2v_inst15.Q
 
 
-|ParteC|ParteB:Res1
-A => DFFS:D1.D
-B => DFFS:D2.D
-CL => DFFS:D1.CL
-CL => DFFS:D2.CL
-CL => DFFS:D3.CL
-CL => DFFS:D4.CL
-CL => DFFS:D5.CL
-Bi => DFFS:D3.D
-R <= DFFS:D4.Q
-Bo <= DFFS:D5.Q
-
-
-|ParteC|ParteB:Res1|DFFS:D1
+|ParteCblock|DFFS:b2v_inst
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res1|DFFS:D2
+|ParteCblock|Restador:b2v_inst1
+A => R.IN0
+A => Bo.IN1
+B => R.IN1
+B => Bo.IN0
+B => Bo.IN0
+Bi => R.IN1
+Bi => Bo.IN1
+Bi => Bo.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteCblock|DFFS:b2v_inst10
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res1|DFFS:D3
+|ParteCblock|DFFS:b2v_inst11
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res1|DFFS:D4
+|ParteCblock|DFFS:b2v_inst12
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res1|DFFS:D5
+|ParteCblock|DFFS:b2v_inst13
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res2
-A => DFFS:D1.D
-B => DFFS:D2.D
-CL => DFFS:D1.CL
-CL => DFFS:D2.CL
-CL => DFFS:D3.CL
-CL => DFFS:D4.CL
-CL => DFFS:D5.CL
-Bi => DFFS:D3.D
-R <= DFFS:D4.Q
-Bo <= DFFS:D5.Q
-
-
-|ParteC|ParteB:Res2|DFFS:D1
+|ParteCblock|DFFS:b2v_inst14
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res2|DFFS:D2
+|ParteCblock|DFFS:b2v_inst15
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res2|DFFS:D3
+|ParteCblock|DFFS:b2v_inst16
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res2|DFFS:D4
+|ParteCblock|Restador:b2v_inst2
+A => R.IN0
+A => Bo.IN1
+B => R.IN1
+B => Bo.IN0
+B => Bo.IN0
+Bi => R.IN1
+Bi => Bo.IN1
+Bi => Bo.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteCblock|Restador:b2v_inst3
+A => R.IN0
+A => Bo.IN1
+B => R.IN1
+B => Bo.IN0
+B => Bo.IN0
+Bi => R.IN1
+Bi => Bo.IN1
+Bi => Bo.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteCblock|Restador:b2v_inst4
+A => R.IN0
+A => Bo.IN1
+B => R.IN1
+B => Bo.IN0
+B => Bo.IN0
+Bi => R.IN1
+Bi => Bo.IN1
+Bi => Bo.IN1
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteCblock|DFFS:b2v_inst5
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res2|DFFS:D5
+|ParteCblock|DFFS:b2v_inst6
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res3
-A => DFFS:D1.D
-B => DFFS:D2.D
-CL => DFFS:D1.CL
-CL => DFFS:D2.CL
-CL => DFFS:D3.CL
-CL => DFFS:D4.CL
-CL => DFFS:D5.CL
-Bi => DFFS:D3.D
-R <= DFFS:D4.Q
-Bo <= DFFS:D5.Q
-
-
-|ParteC|ParteB:Res3|DFFS:D1
+|ParteCblock|DFFS:b2v_inst7
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res3|DFFS:D2
+|ParteCblock|DFFS:b2v_inst8
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ParteC|ParteB:Res3|DFFS:D3
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res3|DFFS:D4
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res3|DFFS:D5
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res4
-A => DFFS:D1.D
-B => DFFS:D2.D
-CL => DFFS:D1.CL
-CL => DFFS:D2.CL
-CL => DFFS:D3.CL
-CL => DFFS:D4.CL
-CL => DFFS:D5.CL
-Bi => DFFS:D3.D
-R <= DFFS:D4.Q
-Bo <= DFFS:D5.Q
-
-
-|ParteC|ParteB:Res4|DFFS:D1
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res4|DFFS:D2
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res4|DFFS:D3
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res4|DFFS:D4
-D => Q~reg0.DATAIN
-CL => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ParteC|ParteB:Res4|DFFS:D5
+|ParteCblock|DFFS:b2v_inst9
 D => Q~reg0.DATAIN
 CL => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE

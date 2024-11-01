@@ -42,8 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY ParteCblock
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:49:00  OCTOBER 28, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
-set_global_assignment -name VHDL_FILE ../ParteB/ParteB.vhd
-set_global_assignment -name VHDL_FILE ../ParteB/DFFS.vhd
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -51,9 +49,7 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name VHDL_FILE ParteC.vhd
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_global_assignment -name VHDL_FILE tsParteC.vhd
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tsParteC -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME tsParteC -section_id eda_simulation
@@ -63,7 +59,6 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tsParteC -section_id tsPa
 set_global_assignment -name EDA_TEST_BENCH_FILE tsParteC.vhd -section_id tsParteC
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name BDF_FILE ParteCblock.bdf
 set_location_assignment PIN_Y2 -to CL
 set_location_assignment PIN_AF19 -to R1
 set_location_assignment PIN_AG19 -to R2
@@ -79,6 +74,10 @@ set_location_assignment PIN_AB15 -to B3
 set_location_assignment PIN_AF25 -to B4
 set_location_assignment PIN_AA12 -to Bi
 set_location_assignment PIN_AD19 -to Bo
+set_global_assignment -name VHDL_FILE ParteCblock.vhd
+set_global_assignment -name VHDL_FILE ../ParteB/DFFS.vhd
+set_global_assignment -name VHDL_FILE tsParteC.vhd
+set_global_assignment -name VHDL_FILE Restador.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
