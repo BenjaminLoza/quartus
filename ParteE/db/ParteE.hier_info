@@ -1,7 +1,52 @@
 |ParteE
-clk => state~6.DATAIN
+clk => dir:dir_inst.clk
+clk => dato:dato_inst.clk
+clk => state~2.DATAIN
+sda => Selector6.IN3
+sda => dir:dir_inst.sda
+sda => dato:dato_inst.sda
 sda => state.DATAB
-sda => state.DATAB
-acko <= acko$latch.DB_MAX_OUTPUT_PORT_TYPE
+reset => state~4.DATAIN
+acko << acko$latch.DB_MAX_OUTPUT_PORT_TYPE
+fdip << dir:dir_inst.fdi
+soyp << dir:dir_inst.soy
+hdip << hdi.DB_MAX_OUTPUT_PORT_TYPE
+fdap << dato:dato_inst.fda
+
+
+|ParteE|dir:dir_inst
+sda => SYNTHESIZED_WIRE_46.DATAIN
+hdi => SYNTHESIZED_WIRE_44.IN1
+rs => SYNTHESIZED_WIRE_43.ACLR
+rs => DFF_inst10.ACLR
+rs => DFF_inst11.ACLR
+rs => DFF_inst12.ACLR
+rs => DFF_inst13.ACLR
+rs => DFF_inst14.ACLR
+rs => SYNTHESIZED_WIRE_46.ACLR
+rs => SYNTHESIZED_WIRE_48.ACLR
+rs => SYNTHESIZED_WIRE_49.ACLR
+rs => SYNTHESIZED_WIRE_50.ACLR
+rs => SYNTHESIZED_WIRE_51.ACLR
+rs => SYNTHESIZED_WIRE_52.ACLR
+rs => DFF_inst8.ACLR
+rs => DFF_inst9.ACLR
+clk => SYNTHESIZED_WIRE_44.IN1
+fdi <= SYNTHESIZED_WIRE_43.DB_MAX_OUTPUT_PORT_TYPE
+soy <= soy.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteE|dato:dato_inst
+hda => SYNTHESIZED_WIRE_29.IN0
+clk => SYNTHESIZED_WIRE_29.IN1
+rs => fda~reg0.ACLR
+rs => DFF_inst10.ACLR
+rs => DFF_inst11.ACLR
+rs => DFF_inst12.ACLR
+rs => DFF_inst13.ACLR
+rs => DFF_inst14.ACLR
+rs => DFF_inst9.ACLR
+sda => ~NO_FANOUT~
+fda <= fda~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

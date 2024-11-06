@@ -1,0 +1,198 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- PROGRAM		"Quartus II 64-Bit"
+-- VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+-- CREATED		"Tue Oct 29 18:56:51 2024"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY dato IS 
+	PORT
+	(
+		hda :  IN  STD_LOGIC;
+		scl :  IN  STD_LOGIC;
+		rs :  IN  STD_LOGIC;
+		sda :  IN  STD_LOGIC;
+		fda :  OUT  STD_LOGIC
+	);
+END dato;
+
+ARCHITECTURE bdf_type OF dato IS 
+
+SIGNAL	SYNTHESIZED_WIRE_29 :  STD_LOGIC;
+SIGNAL	DFF_inst9 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_30 :  STD_LOGIC;
+SIGNAL	DFF_inst10 :  STD_LOGIC;
+SIGNAL	DFF_inst11 :  STD_LOGIC;
+SIGNAL	DFF_inst12 :  STD_LOGIC;
+SIGNAL	DFF_inst13 :  STD_LOGIC;
+SIGNAL	DFF_inst14 :  STD_LOGIC;
+SIGNAL	DFF_inst17 :  STD_LOGIC;
+SIGNAL	DFF_inst18 :  STD_LOGIC;
+SIGNAL	DFF_inst19 :  STD_LOGIC;
+SIGNAL	DFF_inst20 :  STD_LOGIC;
+SIGNAL	DFF_inst21 :  STD_LOGIC;
+SIGNAL	DFF_inst22 :  STD_LOGIC;
+
+
+BEGIN 
+SYNTHESIZED_WIRE_30 <= '1';
+
+
+
+SYNTHESIZED_WIRE_29 <= hda AND scl;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst10 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst10 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst10 <= DFF_inst9;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst11 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst11 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst11 <= DFF_inst10;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst12 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst12 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst12 <= DFF_inst11;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst13 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst13 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst13 <= DFF_inst12;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst14 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst14 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst14 <= DFF_inst13;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	fda <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	fda <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	fda <= DFF_inst14;
+END IF;
+END PROCESS;
+
+
+
+
+PROCESS(SYNTHESIZED_WIRE_29,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst18 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst18 <= DFF_inst17;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst19 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst19 <= DFF_inst18;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst20 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst20 <= DFF_inst19;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst21 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst21 <= DFF_inst20;
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst22 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst22 <= DFF_inst21;
+END IF;
+END PROCESS;
+
+
+
+PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)
+BEGIN
+IF (rs = '0') THEN
+	DFF_inst9 <= '0';
+ELSIF (SYNTHESIZED_WIRE_30 = '0') THEN
+	DFF_inst9 <= '1';
+ELSIF (RISING_EDGE(SYNTHESIZED_WIRE_29)) THEN
+	DFF_inst9 <= SYNTHESIZED_WIRE_30;
+END IF;
+END PROCESS;
+
+
+END bdf_type;

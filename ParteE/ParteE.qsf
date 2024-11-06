@@ -54,6 +54,16 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE dato.vhd
 set_global_assignment -name VHDL_FILE dir.vhd
 set_global_assignment -name VHDL_FILE ParteE.vhd
+set_global_assignment -name EDA_MAP_ILLEGAL_CHARACTERS ON -section_id eda_simulation
+set_global_assignment -name EDA_ENABLE_GLITCH_FILTERING ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tsParteE -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tsParteE -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME uut -section_id tsParteE
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "2000 ns" -section_id tsParteE
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tsParteE -section_id tsParteE
+set_global_assignment -name VHDL_FILE tsParteE.vhd
+set_global_assignment -name EDA_TEST_BENCH_FILE tsParteE.vhd -section_id tsParteE
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

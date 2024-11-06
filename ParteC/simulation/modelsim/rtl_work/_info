@@ -15,7 +15,7 @@ L4
 VQj@8DWBOBa<HNS^B=cg`G0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1730480905.051000
+Z8 !s108 1730926322.315000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z10 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteB/DFFS.vhd|
 Z11 o-93 -work work -O0
@@ -50,7 +50,7 @@ L24
 VQbLaz1=K_V]oHFl0:Lm<Z0
 R7
 31
-Z16 !s108 1730480904.984000
+Z16 !s108 1730926322.252000
 Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd|
 Z18 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/ParteCblock.vhd|
 R11
@@ -85,7 +85,7 @@ L4
 VJeK_Gg=zHS7PzFRe:zf872
 R7
 31
-Z22 !s108 1730480905.113000
+Z22 !s108 1730926322.403000
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd|
 Z24 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/Restador.vhd|
 R11
@@ -122,7 +122,7 @@ VWDzZFKz>[3PoT<]iE[G`>1
 R7
 31
 !i10b 1
-Z28 !s108 1730480905.174000
+Z28 !s108 1730926322.462000
 Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 Z30 !s107 C:/Users/santi/OneDrive/Documentos/GitHub/quartus/ParteC/tsParteC.vhd|
 R11

@@ -1,0 +1,22 @@
+library ieee;
+use std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ParteF is
+	port(
+	A: in std_logic_vector(5 downto 0);
+	B: in std_logic_vector(5 downto 0);
+	D: in std_logic_vector(15 downto 0);--salida
+	);
+end;
+
+architecture Divisor of ParteF is	
+
+signal divisor : unsigned(5 downto 0) := B;
+signal dividendo : unsigned(5 downto 0) := A;
+signal cociente : unsigned(9 downto 0) := (others => '0');
+
+
+begin
+
+end;

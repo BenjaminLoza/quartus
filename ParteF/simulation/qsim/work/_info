@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteF\simulation\qsim
+vParteF
+Z1 I:_5UU[bIP3;iXkk^DScRA3
+Z2 V6c5kh>d@W3kO]?AeCSj?S0
+Z3 dC:\Users\santi\OneDrive\Documentos\GitHub\quartus\ParteF\simulation\qsim
+Z4 w1730923466
+Z5 8ParteF.vo
+Z6 FParteF.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ParteF.vo|
+Z9 o-work work -O0
+Z10 n@parte@f
+!i10b 1
+Z11 !s100 90Y16[55A<dL1j=M:hGYm1
+!s85 0
+Z12 !s108 1730923467.088000
+Z13 !s107 ParteF.vo|
+!s101 -O0
+vParteF_vlg_check_tst
+!i10b 1
+Z14 !s100 0SOHY7zIKO9gPY<FCA:L[2
+Z15 IQ0;g<_JWi<3b]3MKQ]L`Q1
+Z16 VbK[j1H8UNZ9<HGo;V;IK>3
+R3
+Z17 w1730923465
+Z18 8pruebaF.vwf.vt
+Z19 FpruebaF.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z20 !s108 1730923467.151000
+Z21 !s107 pruebaF.vwf.vt|
+Z22 !s90 -work|work|pruebaF.vwf.vt|
+!s101 -O0
+R9
+Z23 n@parte@f_vlg_check_tst
+vParteF_vlg_sample_tst
+!i10b 1
+Z24 !s100 zP^O?AnLjH?nb7eY9R0Am1
+Z25 In5[JClOOBajHknHR[0OI21
+Z26 V<lF_Tb0Of9YkDLDFznI>d3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@parte@f_vlg_sample_tst
+vParteF_vlg_vec_tst
+!i10b 1
+Z28 !s100 k0PV5FDU9T8Z7[zQo2P;_1
+Z29 IU0m^NZG6X0_Rig[<@;>D]0
+Z30 VU=`=4FAAh<X;0aPN7g3Ql1
+R3
+R17
+R18
+R19
+Z31 L0 315
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@parte@f_vlg_vec_tst

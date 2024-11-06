@@ -1,0 +1,56 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity tsParteE is
+end tsParteE;
+
+architecture behavior of tsParteE is
+   
+	component ParteE
+        port(
+            clk   : in std_logic;
+            sda   : in std_logic;
+            acko  : out std_logic
+        );
+    end component;
+
+    signal clk,sda: std_logic := '0';
+    signal acko: std_logic;
+
+begin
+
+    uut: ParteE
+        port map (
+            clk   => clk,
+            sda   => sda,
+            acko  => acko
+        );
+
+    process
+    begin
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+    end process;
+
+    process
+    begin
+		sda <= '1';wait for 25 ns;
+		sda <= '0';wait for 20 ns;
+		sda <= '0';wait for 10 ns;
+		sda <= '1';wait for 10 ns;
+		sda <= '0';wait for 30 ns;
+		sda <= '1';wait for 20 ns;
+		sda <= '0';wait for 20 ns;
+		sda <= '1';wait for 25 ns;
+		sda <= '0';wait for 25 ns;
+		sda <= '1';wait for 25 ns;
+		sda <= '0';wait for 25 ns;
+		sda <= '1';wait for 25 ns;
+		sda <= '0';wait for 25 ns;
+		sda <= '1';wait for 25 ns;
+		wait for 100 ns;
+    end process;
+
+end;

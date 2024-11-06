@@ -25,7 +25,7 @@ ENTITY dato IS
 	PORT
 	(
 		hda :  IN  STD_LOGIC;
-		scl :  IN  STD_LOGIC;
+		clk :  IN  STD_LOGIC;
 		rs :  IN  STD_LOGIC;
 		sda :  IN  STD_LOGIC;
 		fda :  OUT  STD_LOGIC
@@ -55,7 +55,7 @@ SYNTHESIZED_WIRE_30 <= '1';
 
 
 
-SYNTHESIZED_WIRE_29 <= hda AND scl;
+SYNTHESIZED_WIRE_29 <= hda AND clk;
 
 
 PROCESS(SYNTHESIZED_WIRE_29,rs,SYNTHESIZED_WIRE_30)

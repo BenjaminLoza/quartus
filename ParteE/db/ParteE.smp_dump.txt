@@ -1,9 +1,9 @@
 
 State Machine - |ParteE|state
-Name state.id state.gda state.ack state.rw state.gdi state.st 
-state.st 0 0 0 0 0 0 
+Name state.st state.gda state.ack state.rw state.gdi state.id 
+state.id 0 0 0 0 0 0 
 state.gdi 0 0 0 0 1 1 
 state.rw 0 0 0 1 0 1 
 state.ack 0 0 1 0 0 1 
 state.gda 0 1 0 0 0 1 
-state.id 1 0 0 0 0 1 
+state.st 1 0 0 0 0 1 

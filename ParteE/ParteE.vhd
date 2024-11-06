@@ -13,7 +13,12 @@ entity ParteE is
 	port(
 		clk		 : in	std_logic;
 		sda	 : in	std_logic;
-		acko	 : out	std_logic
+		reset:in std_logic;
+		acko	 : out	std_logic;
+		fdip: out std_logic;
+	   soyp: out std_logic;
+		hdip: out std_logic;
+		fdap: out std_logic
 	);
 
 end entity;
@@ -25,56 +30,83 @@ architecture rtl of ParteE is
 
 	-- Register to hold the current state
 	signal state : state_type;
-	signal hdi,scl,rs,fdi,soy,fda,hda: std_logic;
+	signal hdi,rs,fdi,soy,fda,hda: std_logic:= '0';
 	
 		
 	component dir 
-		port(scl,sda,hdi,rs:in std_logic;fdi,soy:out std_logic);
+		port(sda,clk,hdi,rs:in std_logic;fdi,soy:out std_logic);--clk es alimentado por el clock
 	end component;
 	component dato
-		port(hda,scl,rs,sda:in std_logic;fda:out std_logic);
+		port(hda,clk,rs,sda:in std_logic;fda:out std_logic);--clk es alimentado por el clock
 	end component;
 
-	
+
 begin
+	dir_inst : dir
+   port map (
+      sda => sda,
+      clk => clk,
+      hdi => hdi,
+      rs => rs,
+      fdi => fdi,
+      soy => soy
+   );
+
+	dato_inst : dato
+   port map (
+      hda => hda,
+      clk => clk,
+      rs => rs,
+      sda => sda,
+      fda => fda
+   );
+
 	
+fdip<= fdi;
+fdap<= fda;
+soyp<= soy;
+hdip<= hdi;
 	process (clk)
 	begin
-	if (rising_edge(clk)) then
+	if reset='1' then
+		state<=id;
+	elsif (rising_edge(clk)) then
 			case state is
-				when id=>
+				when id=>----1 clock
 					if sda = '1' then
 						state <= id;
 					else
 						state <= st;
 					end if;
-				when st=>
+				when st=>----2 clock
 					if sda = '1' then
 						state <= gdi;
 					else
 						state <= gdi;
 					end if;
-				when gdi=>
+				when gdi=>----9 clock
 					if fdi = '1' then
-						if soy = '1' then	
+						if soy = '1' then	---necesita 0100011
 							state <= rw;
+						else
+							state <= id;
 						end if;
 					else
 						state <= gdi;
 					end if;
-				when rw =>
+				when rw =>----10 clock
 					if sda = '1' then
 						state <= ack;
 					else
 						state <= ack;
 					end if;
-				when ack=>
+				when ack=>----11 clock
 					if sda = '1' then
 						state <= gda;
 					else
 						state <= gda;
 					end if;
-				when gda =>
+				when gda =>----19 clock
 					if fda = '1' then
 						state <= id;
 					else
