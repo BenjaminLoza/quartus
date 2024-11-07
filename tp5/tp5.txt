@@ -1,0 +1,69 @@
+1) 4°, La GAL usa tecnologia EECMOS,de modo que es reprogramable
+2)F,V,F,V,F(dependiendo del objetivo),V,V,F,F
+3)-----Sin proceso:
+architecture behaviour of SUMADOR_COMPLETO is
+begin
+	Sum<= A xor B xor Cin;              
+	Cout<= (A and B) or (A and Cin) or (B and Cin);  
+end;
+
+-----con procesos
+
+architecture behaviour of SUMADOR_COMPLETO is
+signal caso:std_logic_vector(2 downto 0);
+begin
+caso<=(A&B&Cin);
+	process (caso)
+	begin
+        case caso is
+            when "000" => 
+                S <= '0';Cout <= '0';
+            when "001" => 
+                S <= '1';Cout <= '0';
+            when "010" => 
+                S <= '1';Cout <= '0';
+            when "011" => 
+                S <= '0';Cout <= '1';
+            when "100" => 
+                S <= '1';Cout <= '0';
+            when "101" => 
+                S <= '0';Cout <= '1';
+            when "110" => 
+                S <= '0';Cout <= '1';
+            when "111" => 
+                S <= '1';Cout <= '1';
+        end case;
+    end process;
+end architecture;
+
+4)a)se sintetisa un mux de 4 entradas de 4 bits cada una
+sel|salida
+00 |0
+01 |A
+10 |B
+11 |C
+b)se sintetisa tristate
+op|salida
+0 |entrada
+1 |Z(alta impedancia)
+
+5) 
+1°:Bloques de logica(son los elementos que llevan las operaciones a cabo)
+2°:Bloques de Entrada/Salida(Como dice su nombre es la interfaz entre los pines de la FPGA y los el circuito logico interno)
+3°:Interconexiones programables(conectan los bloques logicos y las entradas/salidas)
+
+Ademas los bloques de logica contienen:
+	Look Up Tables
+	Logica de Acarreo
+	Mulitplexores
+	Registros
+
+6)Es un lenguage programable no secuencial,capas de hacer multiples operaciones al mismo tiempo
+7)Describe un Decodificador 3a8
+Entradas:a_in(3 bits)
+Salidas:a_sal(8 bits)
+8)a)--Revisar imagen en carpeta--
+b)combinacional, no depende de un clock
+c)fmax=1/tpdtotal, donde tpdtotal=tpdor+tpdcompradador
+Tarda muy poco pero utiliza bastante area 
+d)100 registros
