@@ -1,0 +1,7 @@
+1)Los LEs(Logica Elemental) son constituidos por:
+	Look Up Tables
+	Logica de Acarreo
+	Mulitplexores
+	Registros
+Los LABs (Logic Array Blocks) estan constituidos por multiples LEs
+3)Los IP cores son entidades previamente hechas que ocupan bloques Logicos y los Loques embebidos son bloques que vienen en la fpga para su uso,son mas eficientes que usar bloques logicos por como fueron fabricados para su uso especifico no programable.

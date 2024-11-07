@@ -52,7 +52,7 @@ op|salida
 2°:Bloques de Entrada/Salida(Como dice su nombre es la interfaz entre los pines de la FPGA y los el circuito logico interno)
 3°:Interconexiones programables(conectan los bloques logicos y las entradas/salidas)
 
-Ademas los bloques de logica contienen:
+Ademas los bloques de logica contienen,elementos logicos que tienen:
 	Look Up Tables
 	Logica de Acarreo
 	Mulitplexores
